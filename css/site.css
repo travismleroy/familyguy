@@ -1,0 +1,88 @@
+/* WE USE PADDING-TOP TO LEAVE SPACE FOR OUR NAVIGATION*/
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/pattern.jpg');
+    background-repeat: repeat;
+  }
+
+/* BG-PRIMARY IS NORMALLY BLUE.  THIS OVERRIDES IT FOR BACKGROUND AND TURNS IT PURPLE.  SEE NAVIGATION TO SEE IT IN EFFECT*/
+  .bg-primary{
+    background-color: #3a3052 !important;
+  }
+
+/* THIS CREATES THE CUSTOM CLASS WHERE CALLED jumbotron-detail-pets AND SETS THE PICTURE TO USE*/
+.jumbotron-detail-pets {
+    background: url('../images/petsBanner.jpg') no-repeat fixed;
+}
+
+/* THIS CREATES THE CUSTOM CLASS WHERE CALLED jumbotron-detail-contactme AND SETS THE PICTURE TO USE*/
+.jumbotron-detail-contactme {
+    background: url('../images/contactme.jpg') no-repeat fixed;
+}
+
+/* OUR CUSTOM CSS FOR THE JUMBOTRON.  40vh (VARIABLE HEIGHT) MEANS JUMBOTRON NEVER TAKES MORE THAN 40% HEIGHT ON THE PAGE */
+/* YOU MAKE IMAGE SPAN THE WHOLE PAGE BY SETTING SIZE = COVER */
+   .jumbotron{
+      box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.1);
+      height: 40vh;
+      background-size: cover;
+   }
+  
+/* START CAROUSEL CUSTOM CODE*/
+   .carousel {
+    margin-bottom: 0rem;
+  }
+  
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+/* Button text
+.carousel-caption .btn {
+color:          yellow;
+}
+ */
+.carousel-item {
+    height: 26rem;
+    max-width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+  .welcome-carousel-image1{
+/* change to rgba(0,0,0,0.3) IF you want a shadow overlay on your image for some reason */
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0);
+    background-image:url('../images/carousel1.jpg');
+  }
+
+  .welcome-carousel-image2{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0);
+    background-image:url('../images/carousel2.jpg');
+  }
+
+  .welcome-carousel-image3{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.2);
+    background-image:url('../images/carousel3.jpg');
+  }
+/* END CAROUSEL CUSTOM CODE*/
+
+/* START VIDEO CUSTOM CODE*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* END VIDEO CUSTOM CODE*/
