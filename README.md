@@ -1,2 +1,2 @@
-# familyguy
-Family Guy HTML Site
+# Family Guy HTML Website
+This is my first HTML GitHub website.
